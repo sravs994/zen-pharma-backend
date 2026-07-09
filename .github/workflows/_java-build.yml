@@ -239,7 +239,7 @@ jobs:
       - name: Install Cosign
         uses: sigstore/cosign-installer@v3
 
-      - name: Cosign — Sign image (keyless, GitHub OIDC → Fulcio → Rekor)
+      - name: Cosign — Sign image (keyless)
         continue-on-error: true
         run: |
           cosign sign --yes \
