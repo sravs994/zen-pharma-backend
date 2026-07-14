@@ -2,7 +2,7 @@ name: CI/CD — api-gateway
 
 # Triggers on push to develop / release branches only.
 # Feature branches and PRs → ci-pr-api-gateway.yml
-#
+# Added this line to trigger the workflow on push to develop and release branches
 # Jobs:
 #   build       → Maven + SAST + Docker + ECR + Cosign
 #   deploy-dev  → direct commit to envs/dev/ → ArgoCD auto-syncs → smoke test

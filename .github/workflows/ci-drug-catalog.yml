@@ -4,7 +4,7 @@ name: CI/CD — drug-catalog-service
 # Feature branches and PRs → ci-pr-drug-catalog.yml
 # PROD promotion → promote-prod.yml (workflow_dispatch)
 # Note: zen-gitops uses "catalog-service" as the values file name for this service.
-
+# Added this line to trigger the workflow on push to develop and release branches
 on:
   push:
     branches: [develop, 'release/**']
