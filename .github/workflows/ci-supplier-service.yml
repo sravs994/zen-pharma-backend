@@ -1,5 +1,5 @@
 name: CI/CD — supplier-service
-
+# Added this line to trigger the workflow on push to develop and release branches
 # Triggers on push to develop / release branches only.
 # Feature branches and PRs → ci-pr-supplier-service.yml
 # PROD promotion → promote-prod.yml (workflow_dispatch)
