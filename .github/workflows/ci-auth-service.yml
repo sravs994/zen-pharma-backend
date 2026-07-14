@@ -3,7 +3,7 @@ name: CI/CD — auth-service
 # Triggers on push to develop / release branches only.
 # Feature branches and PRs → ci-pr-auth-service.yml
 # PROD promotion → promote-prod.yml (workflow_dispatch)
-
+# Added this line to trigger the workflow on push to develop and release branches
 on:
   push:
     branches: [develop, 'release/**']
